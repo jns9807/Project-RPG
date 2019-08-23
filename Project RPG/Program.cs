@@ -1,12 +1,14 @@
 ﻿using System;
+using Characters;
 
-namespace Project_RPG
+namespace Program
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Character char1 = new Character();
+            char1.PrintCharacter();
         }
     }
 }

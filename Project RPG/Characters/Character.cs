@@ -1,8 +1,8 @@
 using System;
 
-namespace Character //Changed this to be the package
+namespace Characters //Changed this to be the package
 {
-    public abstract class Character
+    public class Character
     {
         private int Level { get; }
         private int CurrentExperience;
