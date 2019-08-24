@@ -1,6 +1,7 @@
 ﻿using System;
 using Characters;
 using Enemies;
+using Environments;
 
 namespace Program
 {
@@ -8,16 +9,16 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Character char1 = new Character();
+            Character Char1 = new Character();
             String UserInput;
-            char1.PrintCharacter();
+            Char1.PrintCharacter();
             
             Console.WriteLine("Type y to battle.");
             UserInput = Console.ReadLine();
 
             while (UserInput == "y") {
-                Enemy Enemy = new Enemy();
-
+                Enemy Enemy1 = new Enemy();
+                Combat.Battle(Char1, Enemy1);
             }
         }
     }
