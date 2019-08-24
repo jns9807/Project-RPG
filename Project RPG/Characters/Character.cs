@@ -7,7 +7,7 @@ namespace Characters //Changed this to be the package
         private int Level { get; }
         private int CurrentExperience;
         private int XpToLevel;
-        private int HitPoints;
+        public int HitPoints { get; set; }
         private int MaxHitPoints;
         private int Strength;
         private int Intelligence;
@@ -32,7 +32,7 @@ namespace Characters //Changed this to be the package
         {
             Console.WriteLine("Level: " + this.Level);
             Console.WriteLine("Current Experience: " + this.CurrentExperience);
-            Console.WriteLine("Current HitPoints" + this.HitPoints);
+            Console.WriteLine("Current HitPoints: " + this.HitPoints);
         }
     }
 }
