@@ -4,9 +4,9 @@ namespace Enemies
 {
     public class Enemy
     {
-        private int Level { get; }
+        public int Level { get; }
         private int CurrentExperience;
-        private int HitPoints;
+        public int HitPoints { get; set; }
         private int Strength;
         private int Intelligence;
         private int ExperienceGain;
